@@ -1,180 +1,178 @@
 /* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
-    
+
+
 .header {
-    background-image: url('ImagenEncabezado.jpg'); /* Ruta correcta de la imagen de fondo */
+    background-image: url('Imagenes/maxresdefault.jpg'); /* Ruta correcta de la imagen de fondo */
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-top: 0; /* Elimina el margen superior */
-    width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
+    width: auto;
+    height: 268px;
+    flex-shrink: 0; 
 }
 
-.right-text {
- /* Ajusta este valor según tus necesidades */
-    text-align: left; /* Alinear el texto a la derecha */
-}
-    
 .logo img {
-    width: 150px; /* Ajusta el tamaño del logo según tu preferencia */
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    width: 169px;
+    height: 171px;
+    flex-shrink: 0;
+    padding: 30px;
 }
 
-    
 header h1 {
-    color: #ffffff;
+    color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
+font-family: Kanit;
+font-size: 54px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column; /* Cambio a columna para que los elementos se apilen uno encima del otro */
+    align-items: center;
+    padding: 20px;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: row; /* Cambio a fila para alinear horizontalmente Bienvenida y imgBienvenida */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bienvenida-container {
+    flex: 0;
+}
+
+.Bienvenida {
+    width: 677px;
+    height: 86px;
+    color: #0F1A59;
+    text-align: center;
+    font-family: Inter;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 75px;
+    
+}
+
+.txtBienvenida {
+    color: #000;
+    text-align: justify;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 50px;
+    margin-left: 130px;
+    width: 575px;
+height: 304px;
+}
+
+.imgBienvenida {
+    width: 500px;
+    height: 455px;
+    padding-left: 0px;
+    padding-top: 30px;
+}
+
+.red-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background: #CF2E26;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 180px;
+    padding: 20px;
+}
+
+.txtCuadroRojo {
+    color: #FFF;
+    text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
-    font-family: Kanit;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin: 0;
-    padding: 0px;
-    font-size: 60px;
 }
 
-.Subtitulo
-{
+.Electrocardiografo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tituloElectro {
     color: #0F1A59;
-text-align: center;
 font-family: Inter;
-font-size: 48px;
+font-size: 32px;
 font-style: normal;
 font-weight: 700;
-letter-spacing: 12px;
+line-height: normal;
 text-transform: uppercase;
-margin-bottom: 0;
-
 }
-.container {
-   
+
+.contenido1 {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
-  
-  .half {
-    flex: 1;
-    padding: 50px;
-    box-sizing: border-box;
-  }
-
-  .image {
-    width: 1080px;
-    height: 1920px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Añadir sombra */
-  }
-
-  .text {
-    color: #000; 
-    text-align: justify;
-    font-family: Inter;
-    font-style: normal;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: normal;
-  }
-
-  .red-div {
-    background-color:#CF2E26 ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .video {
-    max-width: 100%;
-    max-height: 100%;
-    width: 850px;
-    height: 500px;
-    padding-bottom: 50px;
-  }
-
-  .title {
-    color: white;
-    font-size: 24px;
     margin-top: 10px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-top: 50px;
+    
+}
 
-  }
+.imgElectro {
+    width: 400px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Añadir sombra */
+}
 
-  .blue-div {
-    background-color: #0F1A59;
+.txtElectro {
+    width: 591px;
+height: 229px;
+flex-shrink: 0;
+color: #000;
+text-align: justify;
+font-family: Inter;
+font-size: 26px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.boton-conoce-mas {
+    margin-top: 20px;
+    position: relative;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    box-sizing: border-box;
-    margin-top: 100px;
-  }
-
-  .images-container {
-    display: flex;
-    width: 100%;
-    max-height: 50%;
-    box-sizing: border-box;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-  }
-
-  .image {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-  }
-
-.QR {
-    text-align: center; /* Centrar contenido */
-    margin-top: 100px; /* Margen superior */
+    justify-content: center; /* Centrar en el eje horizontal */
 }
 
-.qr {
-    width: auto; /* Ajusta el tamaño de la imagen */
-    height: auto;
-    margin-bottom: 20px; /* Margen inferior */
+.enlace-conoce-mas {
+    background-color: #CF2E26;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
 }
-
-.descripcion {
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-video
-{
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-  
