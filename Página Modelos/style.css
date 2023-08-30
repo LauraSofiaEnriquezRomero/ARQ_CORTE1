@@ -2,33 +2,44 @@
 
 
 .header {
-    background-image: url('Imagenes/maxresdefault.jpg'); /* Ruta correcta de la imagen de fondo */
+    background-image: url('Imagenes/ImagenEncabezado.jpg'); /* Ruta correcta de la imagen de fondo */
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: white;
-    width: auto;
-    height: 268px;
-    flex-shrink: 0; 
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-top: 0; /* Elimina el margen superior */
+    width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
 }
 
+.right-text {
+    /* Ajusta este valor según tus necesidades */
+       text-align: left; /* Alinear el texto a la derecha */
+       padding-right: 50px;
+   }
+
 .logo img {
-    width: 169px;
-    height: 171px;
-    flex-shrink: 0;
-    padding: 30px;
+    width: 160px; /* Ajusta el tamaño del logo según tu preferencia */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
 }
 
 header h1 {
-    color: #FFF;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
-font-family: Kanit;
-font-size: 54px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    color: #ffffff;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.50);
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 65px;
 }
 
 body {
