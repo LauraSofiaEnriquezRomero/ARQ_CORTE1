@@ -320,3 +320,100 @@ h3 {
     width: 160px;
   }
 }
+
+/* Estilos originales aquí... */
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .right-text {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .logo img {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .half {
+    padding: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .red-div,
+  .blue-div {
+    margin-top: 50px;
+  }
+
+  .video {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .title {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+
+  .images-container {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .image {
+    max-width: 100%;
+  }
+
+  .interact {
+    font-size: 20px;
+  }
+
+  .MOD_ESPEC {
+    width: 100%;
+    height: auto;
+  }
+
+  .boton-conoce-mas {
+    margin: 20px 0;
+    align-self: center;
+  }
+
+  .enlace-conoce-mas {
+    width: 160px;
+  }
+
+  .footer-text {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .footer-text p {
+    margin: 10px 0;
+  }
+}

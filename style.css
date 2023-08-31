@@ -1,7 +1,11 @@
-/* styles.css */
-
-
-.header {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
     background-image: url('Imagenes/ImagenEncabezado.jpg');
     /* Ruta correcta de la imagen de fondo */
     background-size: cover;
@@ -18,16 +22,16 @@
     /* Elimina el margen superior */
     width: 100%;
     /* Asegura que el encabezado ocupe todo el ancho */
-}
-
-.right-text {
+  }
+  
+  .right-text {
     /* Ajusta este valor según tus necesidades */
     text-align: left;
     /* Alinear el texto a la derecha */
     padding-right: 50px;
-}
-
-.logo img {
+  }
+  
+  .logo img {
     width: 160px;
     /* Ajusta el tamaño del logo según tu preferencia */
     height: auto;
@@ -35,9 +39,9 @@
     align-items: center;
     justify-content: center;
     padding-left: 50px;
-}
-
-header h1 {
+  }
+  
+  header h1 {
     color: #ffffff;
     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.50);
     font-family: Kanit;
@@ -45,7 +49,7 @@ header h1 {
     font-weight: 400;
     line-height: normal;
     font-size: 65px;
-}
+  }
 
 body {
     font-family: Arial, sans-serif;
@@ -85,7 +89,6 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 75px;
 
 }
 
@@ -97,7 +100,7 @@ body {
     font-weight: 400;
     line-height: normal;
     margin-top: 50px;
-    margin-left: 130px;
+    margin-left: 50px;
     width: 575px;
     height: 304px;
 }
@@ -311,5 +314,95 @@ body {
 
 }
 
+/* Estilos originales aquí... */
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+  
+    .right-text {
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .logo img {
+      padding: 20px;
+    }
+  
+    header h1 {
+      font-size: 40px;
+    }
+  
+    .main {
+      padding: 10px;
+    }
+  
+    .contenido {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .Bienvenida {
+      width: 100%;
+      font-size: 28px;
+      margin: 20px 0;
+    }
+  
+    .txtBienvenida {
+      margin: 20px 0;
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      padding: 0 20px;
+    }
+  
+    .imgBienvenida {
+      width: 100%;
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .red-div,
+    .blue-div {
+      margin-top: 50px;
+    }
+  
+    .Electrocardiografo,
+    .contenido1 {
+      align-items: center;
+    }
+  
+    .imgElectro {
+      width: 100%;
+      margin: 20px 0;
+    }
+  
+    .txtElectro {
+      width: 100%;
+      height: auto;
+    }
+  
+    .boton-conoce-mas {
+      margin: 20px 0;
+      align-self: center;
+    }
+  
+    .footer-text {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .footer-text p {
+      margin: 10px 0;
+    }
+  }
+  
 
 
