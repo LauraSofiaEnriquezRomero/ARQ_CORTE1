@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Laboratorios RA</title>
     <link rel="icon" href="Imagenes/logoPagina.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="styleElectro.css">
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
             <img src="Imagenes/logo.png" alt="Logo de la página">
         </div>
         <div class="right-text">
-            <h1>Ingeniería Biomédica: <br> Visor de dispositivos de laboratorio en RA</h1> 
+            <h1>Ingeniería Biomédica: <br> Visor de dispositivos de laboratorio en RA</h1>
         </div>
 
     </header>
 
     <h2 class="Subtitulo">ESPECTROFOTÓMETRO</h2>
     <div class="container">
-        
+
         <div class="half">
-          <img class="image" src="Imagenes/electro.jpg" alt="Imagen">
+            <img class="image" src="Imagenes\ESPECTOPIC.png" alt="Imagen">
         </div>
         <div class="half text">
             <p>
-                <h3> Funcionamiento </h3> 
-                El espectrofotómetro funciona al enviar luz a 
-                través de una muestra y medir cómo esta absorbe o transmite 
-                diferentes longitudes de onda de luz. Luego, compara estas mediciones 
-                con una muestra de referencia para calcular la cantidad y tipo de sustancias
-                presentes en la muestra. 
-    
-                <h3> Usos principales </h3> 
-                Diagnóstico médico: Mide sustancias en muestras corporales para diagnosticar enfermedades.
-                Evaluación de biomateriales: Caracteriza propiedades de implantes y prótesis para su seguridad y eficacia.
-                Investigación biomolecular: Estudia interacciones de biomoléculas para entender procesos celulares y desarrollar fármacos. 
-    
-                <h3> Importancia </h3>
-                El espectrofotómetro es crucial en ingeniería biomédica 
-                para analizar y cuantificar sustancias en muestras biológicas,
-                caracterizar materiales médicos y facilitar la investigación en 
-                biología molecular, contribuyendo al diagnóstico, desarrollo de 
-                dispositivos y avances médicos. <br>
+            <h3> Funcionamiento </h3>
+            El espectrofotómetro funciona al enviar luz a
+            través de una muestra y medir cómo esta absorbe o transmite
+            diferentes longitudes de onda de luz. Luego, compara estas mediciones
+            con una muestra de referencia para calcular la cantidad y tipo de sustancias
+            presentes en la muestra.
+
+            <h3> Usos principales </h3>
+            Diagnóstico médico: Mide sustancias en muestras corporales para diagnosticar enfermedades.
+            Evaluación de biomateriales: Caracteriza propiedades de implantes y prótesis para su seguridad y eficacia.
+            Investigación biomolecular: Estudia interacciones de biomoléculas para entender procesos celulares y
+            desarrollar fármacos.
+
+            <h3> Importancia </h3>
+            El espectrofotómetro es crucial en ingeniería biomédica
+            para analizar y cuantificar sustancias en muestras biológicas,
+            caracterizar materiales médicos y facilitar la investigación en
+            biología molecular, contribuyendo al diagnóstico, desarrollo de
+            dispositivos y avances médicos. <br>
             </p>
 
         </div>
@@ -51,29 +54,48 @@
     <div class="red-div">
         <h1 class="title">FUNCIONAMIENTO</h1>
         <video class="video" controls>
-          <source src="Videos/videoEspectro.mp4" type="video/mp4">
-          Tu navegador no admite el elemento de video.
+            <source src="Videos/videoEspectro.mp4" type="video/mp4">
+            Tu navegador no admite el elemento de video.
         </video>
-        
+
     </div>
 
 
     <div class="blue-div">
-        <h1 class="title">MODELOS 3D</h1>
+        <h1 class="title">MODELO 3D</h1>
+        <p class="interact">
+            ¡Interactúa con el modelo!
+        </p>
         <div class="images-container">
-            <model-viewer src="ruta-al-modelo.gltf" alt="Descripción del modelo" auto-rotate camera-controls></model-viewer>
         </div>
+        <model-viewer class="MOD_ESPEC"
+            src="https://cdn.glitch.me/9e214776-12fe-492f-b6bf-1cdd47341ca2/MOD_ESPEC.glb?v=1693451337108"
+            alt="modelo 3d" shadow-intensity="1" camera-controls auto-rotate ar>
+        </model-viewer>
     </div>
 
     <div class="QR">
-        <img class="qr" src="Imagenes/QR.png" alt="qr para los modelos">
         <p class="descripcion">
-            ¡Escanea con tu celular para ver el 
+            ¡Escanea con tu celular para ver el
             <br>
-            espectrofotómetro en realidad aumentada!</p>
+            espectrofotómetro en realidad aumentada!
+        </p>
     </div>
-    
-    <main> </main>
-    <footer>  </footer>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+
+    <div class="boton-conoce-mas">
+        <a href="index.html" class="enlace-conoce-mas">Atrás</a>
+    </div>
+
+    <main> </main>
+    <div class="footer">
+        <footer>
+            <div class="logo_footer">
+                <img class="img_logo_footer" src="Imagenes/ImagenFooter.jpg" alt="Logo de la página" >
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
