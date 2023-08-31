@@ -126,7 +126,7 @@ body {
     color: #FFF;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
-    font-size: 32px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -185,7 +185,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+
     /* Centrar en el eje horizontal */
 }
 
@@ -230,6 +230,86 @@ body {
 }
 
 
+/* Estilos originales aquí... */
+
+/* Añade una regla para manejar tamaños de pantalla pequeños */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .right-text {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo img {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bienvenida-container {
+        margin: 0;
+    }
+
+    .Bienvenida {
+        width: auto;
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .txtBienvenida {
+        margin: 20px;
+        width: auto;
+        height: auto;
+    }
+
+    .imgBienvenida {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .Electrocardiografo {
+        padding: 20px;
+    }
+
+    .tituloElectro {
+        font-size: 28px;
+    }
+
+    .contenido1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgElectro {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .txtElectro {
+        width: 100%;
+        height: auto;
+    }
+
+    .boton-conoce-mas {
+        margin-top: 20px;
+        
+    }
+
+}
 
 
 
