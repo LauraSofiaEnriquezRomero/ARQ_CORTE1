@@ -7,7 +7,9 @@ body {
   }
   
   .header {
-    background-image: url('/Imagenes/ImagenEncabezado.jpg');
+
+    background-image: url('Imagenes/ImagenEncabezado.jpg');
+
     /* Ruta correcta de la imagen de fondo */
     background-size: cover;
     background-position: center;
@@ -223,6 +225,7 @@ body {
     margin-right: 20px;
     color: #f0f0f0;
     font-size: 12px;
+    padding-left: 50px;
   
   }
   
@@ -235,110 +238,11 @@ body {
     width: 160px;
   }
   
-  /* Estilos originales aquí... */
-
-/* Media query para pantallas grandes */
-@media screen and (min-width: 769px) {
-  .header {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px 0;
-  }
-
-  .right-text {
-    text-align: right;
-    padding-right: 50px;
-  }
-
-  .logo img {
-    padding-left: 0;
-    padding-right: 50px;
-  }
-
-  header h1 {
-    font-size: 65px;
-  }
-
-  .Subtitulo {
-    font-size: 32px;
-  }
-
+  /* Agrega estas reglas CSS al final de tu archivo styles.css */
+@media (max-width: 768px) {
   .container {
-    flex-direction: row;
-  }
-
-  .half {
-    padding: 50px;
-  }
-
-  .image {
-    width: 1080px;
-    height: 1920px;
-  }
-
-  .text {
-    font-size: 28px;
-  }
-
-  .red-div,
-  .blue-div {
-    margin-top: 100px;
-  }
-
-  .title {
-    font-size: 32px;
-  }
-
-  .images-container {
-    flex-direction: row;
-    max-height: 50%;
-  }
-
-  .image {
-    max-width: 50%;
-  }
-
-  .footer-text {
-    flex-direction: row;
-    align-items: flex-start;
-    margin-right: 20px;
-  }
-
-  .footer-text p {
-    margin-right: 60px;
-  }
-}
-
-/* Media query para pantallas pequeñas (como smartphones) */
-@media screen and (max-width: 768px) {
-  .header {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .right-text {
     text-align: center;
-    padding: 20px;
-  }
-
-  .logo img {
-    padding: 20px;
-  }
-
-  header h1 {
-    font-size: 40px;
-  }
-
-  .Subtitulo {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-
-  .container {
-    flex-direction: column;
   }
 
   .half {
@@ -348,11 +252,6 @@ body {
   .image {
     width: 100%;
     height: auto;
-    padding: 20px 0;
-  }
-
-  .text {
-    font-size: 20px;
   }
 
   .red-div,
@@ -360,28 +259,51 @@ body {
     margin-top: 50px;
   }
 
-  .title {
-    font-size: 24px;
-    padding-top: 30px;
-  }
-
-  .images-container {
-    flex-direction: column;
-    max-height: none;
-  }
-
-  .image {
-    max-width: 100%;
-  }
-
-  .footer-text {
-    flex-direction: column;
+  .footer-content {
+    flex-direction: row;
     align-items: center;
-    margin: 10px 0;
     text-align: center;
   }
 
+  .footer-text {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+  }
+
   .footer-text p {
-    margin: 10px 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-image {
+    width: 100px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Subtitulo {
+    font-size: 28px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  .half {
+    padding: 10px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .interact {
+    font-size: 22px;
   }
 }
