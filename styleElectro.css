@@ -185,8 +185,8 @@ h3 {
 }
 
 .boton-conoce-mas {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   position: relative;
   display: flex;
   align-items: center;
@@ -224,6 +224,7 @@ h3 {
   margin-right: 20px;
   color: #f0f0f0;
   font-size: 12px;
+  padding-left: 50px;
 
 }
 
