@@ -7,7 +7,9 @@ body {
   }
   
   .header {
+
     background-image: url('Imagenes/ImagenEncabezado.jpg');
+
     /* Ruta correcta de la imagen de fondo */
     background-size: cover;
     background-position: center;
