@@ -7,7 +7,7 @@ body {
   }
   
   .header {
-    background-image: url('/ARQ_CORTE1/Imagenes/ImagenEncabezado.jpg');
+    background-image: url('Imagenes/ImagenEncabezado.jpg');
     /* Ruta correcta de la imagen de fondo */
     background-size: cover;
     background-position: center;
@@ -257,13 +257,13 @@ body {
   }
 
   .footer-content {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
   }
 
   .footer-text {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin-right: 0;
   }

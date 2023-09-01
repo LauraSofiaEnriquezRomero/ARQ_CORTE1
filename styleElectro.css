@@ -273,7 +273,15 @@ h3 {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
 }
+
+
 
 @media (max-width: 768px) {
   .half {
@@ -292,13 +300,23 @@ h3 {
     max-height: 40%;
   }
 
-  .footer-text {
-    margin-right: 0;
-    flex-direction: column;
+  .footer-content {
+    flex-direction: row;
     align-items: center;
     text-align: center;
   }
-
+  
+  .footer-text {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+  }
+  
+  .footer-text p {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
   .footer-image {
     width: 100px;
     margin-top: 10px;
@@ -331,7 +349,25 @@ h3 {
     font-size: 16px;
   }
 
-  .footer {
-    height: auto;
+  .footer-content {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-text {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0;
+  }
+  
+  .footer-text p {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .footer-image {
+    width: 100px;
+    margin-top: 10px;
   }
 }
